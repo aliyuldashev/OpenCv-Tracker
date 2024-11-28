@@ -6,7 +6,7 @@
 
 ## 👨🏻‍🎓 Javokhir Yuldoshev 12214760 
 
-
+[![Video Thumbnail](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://drive.google.com/file/d/1823YlenNyStZTw__1S37nhv4DmB0CLGf/view?usp=sharing)
 
 A robust object tracking implementation using OpenCV's CSRT tracker with automatic redetection capabilities.
 
