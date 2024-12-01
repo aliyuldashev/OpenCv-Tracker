@@ -107,7 +107,7 @@ if __name__ == "__main__":
     if user == '1':
         main(0)
     elif user == '2':
-        main('1128.mp4')
+        main("./assets/input_video.mp4")
     else:
         print("Invalid input. Exiting...")
 
