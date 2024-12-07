@@ -1,5 +1,5 @@
-import cv2
-import numpy as np
+import cv2 ,time
+# import numpy as np
 
 class ObjectTracker:
     def __init__(self):
@@ -103,11 +103,19 @@ def main(source:str):
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    user = input("Choose option to process \n1 for webcam \n2 for 'video' to choose the source:\ninput here: ")
+    first = "assets/same_instance.mp4"
+    second = "assets/small_instance.mp4"
+    user = input("Choose option to process \n1 for same_instance \n2 for small_instance to choose the source:\ninput here: ")
     if user == '1':
-        main(0)
+        start = time.time()
+        main(first)
+        end = time.time()
+        print(f"\nTotal processing time: {end - start:.2f} seconds")
     elif user == '2':
-        main('1128.mp4')
-    else:
+        start = time.time()
+        main(second)
+        end = time.time()
+        print(f"\nTotal processing time: {end - start:.2f} seconds")
+else:
         print("Invalid input. Exiting...")
 
